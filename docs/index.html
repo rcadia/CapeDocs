@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app">Please wait...</div>
+  <script>
+    window.$docsify = {
+      homepage: 'Home/_introduction.md',
+      loadSidebar: true,
+      // coverpage: true
+
+      // Search configuration
+      search: {
+        maxAge: 86400000, // Expiration time in milliseconds (one day)
+        paths: [
+          '/', // Default root
+          '/Home/_introduction.md',
+          '/Home/_aboutus.md',
+          '/Scholarships/AvailableScholarships/_undergraduate.md',
+          '/Scholarships/AvailableScholarships/_graduate.md',
+          '/Scholarships/AvailableScholarships/_international.md',
+          '/Scholarships/ApplicationProcess/_eligibilityCriteria.md',
+          '/Scholarships/ApplicationProcess/_howToApply.md',
+          '/Scholarships/ApplicationProcess/_requiredDocuments.md',
+          '/Scholarships/ApplicationProcess/_deadlines.md',
+          '/FAQs/_generalQuestions.md',
+          '/FAQs/_applicationProcess.md',
+          '/FAQs/_eligibility.md',
+          '/FAQs/_scholarshipTypes.md',
+          '/Resources/_tips.md',
+          '/Resources/_recommendationLetter.md',
+          '/Resources/_aid.md',
+          '/Contact/_contact.md',
+          '/Contact/_officeLocations.md'
+        ],
+        placeholder: 'Type to search',
+        noData: 'No Results!',
+        depth: 2,
+        hideOtherSidebarContent: false,
+        namespace: 'hope-scholarship-docs',
+      },
+
+      // Pagination configuration
+      pagination: {
+        previousText: 'Previous',
+        nextText: 'Next',
+        crossChapter: true,
+        crossChapterText: true,
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- Polyfill for legacy browsers -->
+  <script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
+</body>
+</html>
